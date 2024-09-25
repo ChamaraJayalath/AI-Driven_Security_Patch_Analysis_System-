@@ -1,1 +1,4 @@
 .venv
+.idea
+logs
+scripts/__pycache__/
