@@ -11,12 +11,11 @@ class Services(BaseModel):
 class InputData(BaseModel):
     requestId: str
     servicesDetails: Dict[str, Services]
+    currentServicesDetails: Dict[str, Services]
 
 
 class OutputData(BaseModel):
     requestId: str
     servicesDetails: Dict[str, Services]
-    htmlDirectoryPath: str | None
-    markdownDirectoryPath: str | None
-
-
+    currentServicesDetails: Dict[str, Services]
+    directoryPath: str | None
