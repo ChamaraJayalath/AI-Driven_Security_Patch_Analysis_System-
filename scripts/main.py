@@ -29,4 +29,6 @@ async def download_services_data(input_data: InputData):
 
         raise HTTPException(status_code=500, detail=f"An unexpected error occurred: {str(e)}")
     logger.info("Download completed successfully")
+    logger.info(ai_response)
     return JSONResponse(content=ai_response, status_code=200)
+
